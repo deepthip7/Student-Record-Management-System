@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #c3ecb2, #67d3f9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #f0f8ff; /* soft light color inside the box */
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 400px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0; /* spacing between inputs */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Buttons - all same color */
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #3498db; /* elegant blue */
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Output Section */
+#output {
+    margin-top: 20px;
+    min-height: 50px;
+    font-size: 16px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+/* Grouping buttons neatly */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.search-section {
+    margin-top: 20px;
+}
+
+/* Make club input visually match others */
+.form-section input#club {
+    margin-bottom: 15px; /* extra spacing below club */
+}
