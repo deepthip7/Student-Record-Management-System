@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Student Management System</h1>
+
+    <div class="form-section">
+        <input type="number" id="roll" placeholder="Roll Number">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="number" id="marks" placeholder="Marks">
+        <input type="text" id="club" placeholder="Club"> <!-- new field -->
+        <div class="button-group">
+            <button class="btn add" onclick="addStudent()">Add</button>
+            <button class="btn edit" onclick="editStudent()">Edit</button>
+            <button class="btn delete" onclick="deleteStudent()">Delete</button>
+        </div>
+    </div>
+
+    <div class="search-section">
+        <input type="number" id="searchRoll" placeholder="Search by Roll">
+        <button class="btn search" onclick="searchStudent()">Search</button>
+    </div>
+
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
